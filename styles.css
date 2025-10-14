@@ -10,7 +10,7 @@ body {
     background-color: #FDF6E3;
     color: #333;
     line-height: 1.6;
-    padding-top: 60px;
+    padding-top: 210px;
     /* espaço para barra fixa */
     font-size: 16px;
     /* base legível em mobile */
@@ -24,12 +24,26 @@ header {
     width: 100%;
     background-color: #EEE8D5;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* Adicione esta linha */
+    align-items: center;
+    /* Centraliza horizontalmente */
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
     z-index: 1000;
     border-bottom: 1px solid #D3CBB8;
-    flex-wrap: wrap;
+}
+
+.language-nav {
+    margin-bottom: 15px;
+    /* Espaço entre os botões e a imagem */
+}
+
+header img {
+    max-width: 300px;
+    /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    display: block;
 }
 
 .language-btn {
@@ -116,17 +130,9 @@ li {
     padding: 8px 10px;
     border-radius: 8px;
     transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
-    background-color: #FFF3D6;
-    font-size: clamp(0.95rem, 3vw, 1.1rem);
-}
-
-/* Fundo alternado */
-ul li:nth-child(even) {
     background-color: #FFEBC5;
-}
-
-/* Sombra leve e hover */
-ul li {
+    /* cor única para todos os itens */
+    font-size: clamp(0.95rem, 3vw, 1.1rem);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
 }
 
