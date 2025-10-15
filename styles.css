@@ -118,6 +118,11 @@ hr.decorative {
     margin: 12px 0;
 }
 
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
 /* Listas */
 ul {
     list-style: none;
